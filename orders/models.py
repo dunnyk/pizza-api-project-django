@@ -26,7 +26,7 @@ class Order(models.Model):
     size = models.CharField(max_length=25, choices=SIZES, default=SIZES[0][0])
     order_status = models.CharField(
         max_length=25, choices=ORDER_STATUS, default=ORDER_STATUS[0][0])
-    quantity = models.IntegerField()
+    quantity = models.IntegerField(default=0)
     create_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
