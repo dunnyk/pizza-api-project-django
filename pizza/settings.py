@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'rest_framework',
     'djoser',
+    'drf_yasg',
 ]
 
 
@@ -56,6 +57,17 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
     'TOKEN_LIFETIME': timedelta(days=1),
     'BLACKLIST_AFTER_ROTATION': False,
+}
+
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+
+        'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header'
+        }
+    }
 }
 
 
