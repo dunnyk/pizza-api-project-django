@@ -16,8 +16,8 @@ djangorestframework-simplejwt = "*"
 drf-yasg = "*"
 dj-database-url = "*"
 gunicorn = "*"
-psycopg-binary = "*"
 whitenoise = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.8"
