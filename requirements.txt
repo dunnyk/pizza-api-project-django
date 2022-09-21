@@ -8,7 +8,7 @@ coreschema==0.0.4
 cryptography==38.0.1
 defusedxml==0.7.1
 dj-database-url==1.0.0
-Django==4.1.1
+Django==4.0
 django-phonenumber-field==7.0.0
 django-phonenumbers==1.0.1
 django-templated-mail==1.1.1
